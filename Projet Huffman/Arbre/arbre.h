@@ -37,7 +37,6 @@ void Add_Liste_Noeud(L_Noeud** l, Noeud* n);
 void trie_liste(Element** liste);
 void Arbre_Huff(Element* l);
 void print_tree(Noeud* tree);
-void creer_code(Noeud* Arbre, char* code, FILE* dico);
 void print_tree(Noeud* tree);
 
 
