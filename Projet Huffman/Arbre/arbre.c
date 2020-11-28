@@ -45,7 +45,7 @@ void trad_fichier_ascii(FILE* f)
  *  \return \c NULL, if the charactere is none.
  *
  */
-externchar* binaire(char a);
+extern char* binaire(char a);
 char* binaire(char a)            //Convertie les lettres en binaire
 {
     int i = 0;
@@ -80,7 +80,7 @@ char* binaire(char a)            //Convertie les lettres en binaire
  *  \return \c NULL, if the charactere is none.
  *
  */
-externchar* binaire(char a);
+extern char* binaire(char a);
 int nombre_caractere_fich_txt(FILE* f)
 {
     int nombre = -1; // on enleve le NULL à la fin du texte 
@@ -104,7 +104,7 @@ int nombre_caractere_fich_txt(FILE* f)
  *  \return \c NULL, if the file is none.
  *
  */
-externElement* compter_occurrence(FILE* f);
+extern Element* compter_occurrence(FILE* f);
 Element* compter_occurrence(FILE* f)
 {
     Element* lsc;
@@ -159,7 +159,7 @@ Element* compter_occurrence(FILE* f)
     return lsc;
 }
 /**
- * \brief Function to print a list of element .
+ * \brief Function to print a list of element.
  * \n Example
  * \code{.c}
  * void afficherListe(Element* liste);
@@ -182,7 +182,7 @@ void afficherListe(Element* liste)
     printf("NULL\n");
 }
 /**
- * \brief Function  to creat  a list of noeud .
+ * \brief Function  to creat  a list of noeud.
  * \n Example
  * \code{.c}
  * void creer_liste(L_Noeud** l_nd, Element* l);
@@ -232,7 +232,7 @@ void creer_liste(L_Noeud** l_nd, Element* l) // CREER une liste de noeuds
     temp->suivant = NULL;
 }
 /**
- * \brief Function  to print  a list of noeud .
+ * \brief Function  to print  a list of noeud.
  * \n Example
  * \code{.c}
  * void afficherListe_Noeud(L_Noeud* liste);
@@ -256,7 +256,7 @@ void afficherListe_Noeud(L_Noeud* liste)
     printf("NULL\n");
 }
 /**
- * \brief Function  to add  a node to a  list of node .
+ * \brief Function  to add  a node to a  list of node.
  * \n Example
  * \code{.c}
  * void Add_Liste_Noeud(L_Noeud** l, Noeud* n);
