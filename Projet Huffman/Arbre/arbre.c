@@ -42,7 +42,7 @@ void trad_fichier_ascii(FILE* f)
  * \brief Function to convert number to binary.
  * \n Example
  * \code{.c}
- * char* binaire(char a) ;
+ * char* binaire(char a);
  * \endcode
  * \return if the character is not none, we generate the  binary convesion of the charactere.
  *  \return \c NULL, if the charactere is none.
@@ -79,7 +79,7 @@ char* binaire(char a)            //Convertie les lettres en binaire
  * \brief Function to convert number to binary.
  * \n Example
  * \code{.c}
- * char* binaire(char a) ;
+ * char* binaire(char a);
  * \endcode
  * \return if the character is not none, we generate the  binary convesion of the charactere.
  *  \return \c NULL, if the charactere is none.
@@ -330,7 +330,7 @@ void Add_Liste_Noeud(L_Noeud** l, Noeud* n)  // Ajouter n dans la liste de noeud
 }
 
 /**
- * \brief Function  to sort a list .
+ * \brief Function  to sort a list.
  * \n Example
  * \code{.c}
  * void trie_liste(Element** liste);
