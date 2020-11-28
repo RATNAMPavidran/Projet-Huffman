@@ -69,54 +69,63 @@ $(function() {
 <div class="title">arbre.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*****************************************************************/</span></div>
+<a href="arbre_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment"> /*****************************************************************/</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ARBRE_H_INCLUDED</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ARBRE_H_INCLUDED</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_element.html">Element</a> <a class="code" href="struct_element.html">Element</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_element.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_element.html">Element</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">char</span> lettre;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> nombre;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="struct_element.html">Element</a>* suivant;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_noeud.html">Noeud</a> <a class="code" href="struct_noeud.html">Noeud</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_noeud.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_noeud.html">Noeud</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_element.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_element.html">Element</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">char</span> lettre;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> nombre;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="struct_element.html">Element</a>* suivant;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="arbre_8h.html#aed98d73ee26a4beb54eaea48f35f8694">   22</a></span>&#160;}<a class="code" href="arbre_8h.html#aed98d73ee26a4beb54eaea48f35f8694">Element</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_noeud.html">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_noeud.html">Noeud</a>{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> poids;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">char</span> lettre;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="struct_noeud.html">Noeud</a>* droite;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="struct_noeud.html">Noeud</a>* gauche;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_l___noeud.html">L_Noeud</a> <a class="code" href="struct_l___noeud.html">L_Noeud</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_l___noeud.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_l___noeud.html">L_Noeud</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="struct_noeud.html">Noeud</a>* n;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct_l___noeud.html">L_Noeud</a>* suivant;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="arbre_8h.html#ae80d9eb3aee3753b2d5a24b616349e35">   33</a></span>&#160;} <a class="code" href="arbre_8h.html#ae80d9eb3aee3753b2d5a24b616349e35">Noeud</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_l___noeud.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_l___noeud.html">L_Noeud</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="struct_noeud.html">Noeud</a>* n;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="struct_l___noeud.html">L_Noeud</a>* suivant;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <a class="code" href="struct_l___noeud.html">L_Noeud</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> trad_fichier_ascii(FILE* f);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> nombre_caractere_fich_txt(FILE* f);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct_element.html">Element</a>* compter_occurrence(FILE* f);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">char</span>* binaire(<span class="keywordtype">char</span> a);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> creer_liste(<a class="code" href="struct_l___noeud.html">L_Noeud</a>** l_nd, <a class="code" href="struct_element.html">Element</a>* l)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> afficherListe_Noeud(<a class="code" href="struct_l___noeud.html">L_Noeud</a>* liste);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> Add_Liste_Noeud(<a class="code" href="struct_l___noeud.html">L_Noeud</a>** l, <a class="code" href="struct_noeud.html">Noeud</a>* n);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> trie_liste(<a class="code" href="struct_element.html">Element</a>** liste);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> Arbre_Huff(<a class="code" href="struct_element.html">Element</a>* l);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> print_tree(<a class="code" href="struct_noeud.html">Noeud</a>* tree);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> print_tree(<a class="code" href="struct_noeud.html">Noeud</a>* tree);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#ade04e8faa0f67cc84b79ebd74582fe32">trad_fichier_ascii</a>(FILE* f);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> nombre_caractere_fich_txt(FILE* f);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="struct_element.html">Element</a>* <a class="code" href="arbre_8h.html#a8c83a8e14c47228d17d0e647af646286">compter_occurrence</a>(FILE* f);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="arbre_8h.html#a41ac2ea0f922bf08aa3e5ef4b73e1096">binaire</a>(<span class="keywordtype">char</span> a);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#aff0b6ba273bf24cec2a34be8d94cf839">creer_liste</a>(<a class="code" href="struct_l___noeud.html">L_Noeud</a>** l_nd, <a class="code" href="struct_element.html">Element</a>* l)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> afficherListe_Noeud(<a class="code" href="struct_l___noeud.html">L_Noeud</a>* liste);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#ae8c94b40df9a250a2a778797c980b573">Add_Liste_Noeud</a>(<a class="code" href="struct_l___noeud.html">L_Noeud</a>** l, <a class="code" href="struct_noeud.html">Noeud</a>* n);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#aa89d821022996d8fbb77cf6ba96d458f">trie_liste</a>(<a class="code" href="struct_element.html">Element</a>** liste);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#a02685dbfba32a3c1a38b13a2a523e98e">Arbre_Huff</a>(<a class="code" href="struct_element.html">Element</a>* l);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#ad9f2db2be9b51e57b97d57a039295237">print_tree</a>(<a class="code" href="struct_noeud.html">Noeud</a>* tree);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arbre_8h.html#ad9f2db2be9b51e57b97d57a039295237">print_tree</a>(<a class="code" href="struct_noeud.html">Noeud</a>* tree);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // ARBRE_H_INCLUDED</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // ARBRE_H_INCLUDED</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_element_html"><div class="ttname"><a href="struct_element.html">Element</a></div><div class="ttdef"><b>Definition:</b> arbre.h:17</div></div>
-<div class="ttc" id="astruct_l___noeud_html"><div class="ttname"><a href="struct_l___noeud.html">L_Noeud</a></div><div class="ttdef"><b>Definition:</b> arbre.h:40</div></div>
+<div class="ttc" id="aarbre_8h_html_a8c83a8e14c47228d17d0e647af646286"><div class="ttname"><a href="arbre_8h.html#a8c83a8e14c47228d17d0e647af646286">compter_occurrence</a></div><div class="ttdeci">Element * compter_occurrence(FILE *f)</div><div class="ttdoc">Function to count occurence of a charactere.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:108</div></div>
+<div class="ttc" id="astruct_element_html"><div class="ttname"><a href="struct_element.html">Element</a></div><div class="ttdef"><b>Definition:</b> arbre.h:18</div></div>
+<div class="ttc" id="aarbre_8h_html_a02685dbfba32a3c1a38b13a2a523e98e"><div class="ttname"><a href="arbre_8h.html#a02685dbfba32a3c1a38b13a2a523e98e">Arbre_Huff</a></div><div class="ttdeci">void Arbre_Huff(Element *l)</div><div class="ttdoc">Function to creat Huffman tree.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:368</div></div>
+<div class="ttc" id="aarbre_8h_html_ade04e8faa0f67cc84b79ebd74582fe32"><div class="ttname"><a href="arbre_8h.html#ade04e8faa0f67cc84b79ebd74582fe32">trad_fichier_ascii</a></div><div class="ttdeci">void trad_fichier_ascii(FILE *f)</div><div class="ttdoc">Function to translate ascci files.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:17</div></div>
+<div class="ttc" id="aarbre_8h_html_a41ac2ea0f922bf08aa3e5ef4b73e1096"><div class="ttname"><a href="arbre_8h.html#a41ac2ea0f922bf08aa3e5ef4b73e1096">binaire</a></div><div class="ttdeci">char * binaire(char a)</div><div class="ttdoc">Function to convert number to binary.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:49</div></div>
+<div class="ttc" id="aarbre_8h_html_aa89d821022996d8fbb77cf6ba96d458f"><div class="ttname"><a href="arbre_8h.html#aa89d821022996d8fbb77cf6ba96d458f">trie_liste</a></div><div class="ttdeci">void trie_liste(Element **liste)</div><div class="ttdoc">Function to sort a list.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:325</div></div>
+<div class="ttc" id="astruct_l___noeud_html"><div class="ttname"><a href="struct_l___noeud.html">L_Noeud</a></div><div class="ttdef"><b>Definition:</b> arbre.h:39</div></div>
+<div class="ttc" id="aarbre_8h_html_aed98d73ee26a4beb54eaea48f35f8694"><div class="ttname"><a href="arbre_8h.html#aed98d73ee26a4beb54eaea48f35f8694">Element</a></div><div class="ttdeci">struct Element Element</div><div class="ttdoc">structure of the liste of element.</div></div>
+<div class="ttc" id="aarbre_8h_html_aff0b6ba273bf24cec2a34be8d94cf839"><div class="ttname"><a href="arbre_8h.html#aff0b6ba273bf24cec2a34be8d94cf839">creer_liste</a></div><div class="ttdeci">void creer_liste(L_Noeud **l_nd, Element *l) void afficherListe_Noeud(L_Noeud *liste)</div><div class="ttdoc">Function to creat a list of noeud.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:195</div></div>
+<div class="ttc" id="aarbre_8h_html_ae80d9eb3aee3753b2d5a24b616349e35"><div class="ttname"><a href="arbre_8h.html#ae80d9eb3aee3753b2d5a24b616349e35">Noeud</a></div><div class="ttdeci">struct Noeud Noeud</div><div class="ttdoc">structure of the liste of noeud.</div></div>
+<div class="ttc" id="aarbre_8h_html_ae8c94b40df9a250a2a778797c980b573"><div class="ttname"><a href="arbre_8h.html#ae8c94b40df9a250a2a778797c980b573">Add_Liste_Noeud</a></div><div class="ttdeci">void Add_Liste_Noeud(L_Noeud **l, Noeud *n)</div><div class="ttdoc">Function to add a node to a list of node.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:269</div></div>
+<div class="ttc" id="aarbre_8h_html_ad9f2db2be9b51e57b97d57a039295237"><div class="ttname"><a href="arbre_8h.html#ad9f2db2be9b51e57b97d57a039295237">print_tree</a></div><div class="ttdeci">void print_tree(Noeud *tree)</div><div class="ttdoc">Function to print tree.   Example.</div><div class="ttdef"><b>Definition:</b> arbre.c:412</div></div>
 <div class="ttc" id="astruct_noeud_html"><div class="ttname"><a href="struct_noeud.html">Noeud</a></div><div class="ttdef"><b>Definition:</b> arbre.h:28</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,244 @@
+\hypertarget{arbre_8h}{}\doxysection{Arbre/arbre.h File Reference}
+\label{arbre_8h}\index{Arbre/arbre.h@{Arbre/arbre.h}}
+
+
+Header of the library allowing the management of arbre.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_element}{Element}}
+\item 
+struct \mbox{\hyperlink{struct_noeud}{Noeud}}
+\item 
+struct \mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{arbre_8h_aed98d73ee26a4beb54eaea48f35f8694}\label{arbre_8h_aed98d73ee26a4beb54eaea48f35f8694}} 
+typedef struct \mbox{\hyperlink{struct_element}{Element}} \mbox{\hyperlink{arbre_8h_aed98d73ee26a4beb54eaea48f35f8694}{Element}}
+\begin{DoxyCompactList}\small\item\em structure of the liste of element. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_noeud}{Noeud}} \mbox{\hyperlink{arbre_8h_ae80d9eb3aee3753b2d5a24b616349e35}{Noeud}}
+\begin{DoxyCompactList}\small\item\em structure of the liste of noeud. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{arbre_8h_a460485e0dc6906f1bd8d3671027bfd63}\label{arbre_8h_a460485e0dc6906f1bd8d3671027bfd63}} 
+typedef struct \mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} {\bfseries L\+\_\+\+Noeud}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{arbre_8h_ade04e8faa0f67cc84b79ebd74582fe32}{trad\+\_\+fichier\+\_\+ascii}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Function to translate ascci files. ~\newline
+ Example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{arbre_8h_ae0ea3504192fe3dbc5111800e9a2b06e}\label{arbre_8h_ae0ea3504192fe3dbc5111800e9a2b06e}} 
+int {\bfseries nombre\+\_\+caractere\+\_\+fich\+\_\+txt} (F\+I\+LE $\ast$f)
+\item 
+\mbox{\hyperlink{struct_element}{Element}} $\ast$ \mbox{\hyperlink{arbre_8h_a8c83a8e14c47228d17d0e647af646286}{compter\+\_\+occurrence}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Function to count occurence of a charactere. ~\newline
+ Example. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{arbre_8h_a41ac2ea0f922bf08aa3e5ef4b73e1096}{binaire}} (char a)
+\begin{DoxyCompactList}\small\item\em Function to convert number to binary. ~\newline
+ Example. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arbre_8h_aff0b6ba273bf24cec2a34be8d94cf839}{creer\+\_\+liste}} (\mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} $\ast$$\ast$l\+\_\+nd, \mbox{\hyperlink{struct_element}{Element}} $\ast$l) void afficher\+Liste\+\_\+\+Noeud(\mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Function to creat a list of noeud. ~\newline
+ Example. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arbre_8h_ae8c94b40df9a250a2a778797c980b573}{Add\+\_\+\+Liste\+\_\+\+Noeud}} (\mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} $\ast$$\ast$l, \mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Function to add a node to a list of node. ~\newline
+ Example. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arbre_8h_aa89d821022996d8fbb77cf6ba96d458f}{trie\+\_\+liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$liste)
+\begin{DoxyCompactList}\small\item\em Function to sort a list. ~\newline
+ Example. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arbre_8h_a02685dbfba32a3c1a38b13a2a523e98e}{Arbre\+\_\+\+Huff}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Function to creat Huffman tree. ~\newline
+ Example. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arbre_8h_ad9f2db2be9b51e57b97d57a039295237}{print\+\_\+tree}} (\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$tree)
+\begin{DoxyCompactList}\small\item\em Function to print tree. ~\newline
+ Example. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of the library allowing the management of arbre. 
+
+\begin{DoxyAuthor}{Author}
+Mélina, Arnaud, Pavidran, Olivier, Tommy 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{arbre_8h_ae80d9eb3aee3753b2d5a24b616349e35}\label{arbre_8h_ae80d9eb3aee3753b2d5a24b616349e35}} 
+\index{arbre.h@{arbre.h}!Noeud@{Noeud}}
+\index{Noeud@{Noeud}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{Noeud}{Noeud}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_noeud}{Noeud}}}
+
+
+
+structure of the liste of noeud. 
+
+structure list of noeud. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{arbre_8h_ae8c94b40df9a250a2a778797c980b573}\label{arbre_8h_ae8c94b40df9a250a2a778797c980b573}} 
+\index{arbre.h@{arbre.h}!Add\_Liste\_Noeud@{Add\_Liste\_Noeud}}
+\index{Add\_Liste\_Noeud@{Add\_Liste\_Noeud}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{Add\_Liste\_Noeud()}{Add\_Liste\_Noeud()}}
+{\footnotesize\ttfamily void Add\+\_\+\+Liste\+\_\+\+Noeud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} $\ast$$\ast$}]{l,  }\item[{\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Function to add a node to a list of node. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_ae8c94b40df9a250a2a778797c980b573}{Add\_Liste\_Noeud}}(\mbox{\hyperlink{struct_l___noeud}{L\_Noeud}}** l, \mbox{\hyperlink{struct_noeud}{Noeud}}* n);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_a02685dbfba32a3c1a38b13a2a523e98e}\label{arbre_8h_a02685dbfba32a3c1a38b13a2a523e98e}} 
+\index{arbre.h@{arbre.h}!Arbre\_Huff@{Arbre\_Huff}}
+\index{Arbre\_Huff@{Arbre\_Huff}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{Arbre\_Huff()}{Arbre\_Huff()}}
+{\footnotesize\ttfamily void Arbre\+\_\+\+Huff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Function to creat Huffman tree. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_a02685dbfba32a3c1a38b13a2a523e98e}{Arbre\_Huff}}(\mbox{\hyperlink{struct_element}{Element}}* l);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_a41ac2ea0f922bf08aa3e5ef4b73e1096}\label{arbre_8h_a41ac2ea0f922bf08aa3e5ef4b73e1096}} 
+\index{arbre.h@{arbre.h}!binaire@{binaire}}
+\index{binaire@{binaire}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{binaire()}{binaire()}}
+{\footnotesize\ttfamily char$\ast$ binaire (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})}
+
+
+
+Function to convert number to binary. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{char}* \mbox{\hyperlink{arbre_8h_a41ac2ea0f922bf08aa3e5ef4b73e1096}{binaire}}(\textcolor{keywordtype}{char} a);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+if the character is not none, we generate the binary convesion of the charactere. 
+
+{\ttfamily N\+U\+LL}, if the charactere is none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_a8c83a8e14c47228d17d0e647af646286}\label{arbre_8h_a8c83a8e14c47228d17d0e647af646286}} 
+\index{arbre.h@{arbre.h}!compter\_occurrence@{compter\_occurrence}}
+\index{compter\_occurrence@{compter\_occurrence}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{compter\_occurrence()}{compter\_occurrence()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_element}{Element}}$\ast$ compter\+\_\+occurrence (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Function to count occurence of a charactere. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_element}{Element}}* \mbox{\hyperlink{arbre_8h_a8c83a8e14c47228d17d0e647af646286}{compter\_occurrence}}(FILE* f);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+we retrun a list of all the charactere with their occurnece. 
+
+{\ttfamily N\+U\+LL}, if the file is none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_aff0b6ba273bf24cec2a34be8d94cf839}\label{arbre_8h_aff0b6ba273bf24cec2a34be8d94cf839}} 
+\index{arbre.h@{arbre.h}!creer\_liste@{creer\_liste}}
+\index{creer\_liste@{creer\_liste}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{creer\_liste()}{creer\_liste()}}
+{\footnotesize\ttfamily void creer\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_l___noeud}{L\+\_\+\+Noeud}} $\ast$$\ast$}]{l\+\_\+nd,  }\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Function to creat a list of noeud. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_aff0b6ba273bf24cec2a34be8d94cf839}{creer\_liste}}(\mbox{\hyperlink{struct_l___noeud}{L\_Noeud}}** l\_nd, \mbox{\hyperlink{struct_element}{Element}}* l);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_ad9f2db2be9b51e57b97d57a039295237}\label{arbre_8h_ad9f2db2be9b51e57b97d57a039295237}} 
+\index{arbre.h@{arbre.h}!print\_tree@{print\_tree}}
+\index{print\_tree@{print\_tree}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{print\_tree()}{print\_tree()}}
+{\footnotesize\ttfamily void print\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+
+
+Function to print tree. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_ad9f2db2be9b51e57b97d57a039295237}{print\_tree}}(\mbox{\hyperlink{struct_noeud}{Noeud}}* tree);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_ade04e8faa0f67cc84b79ebd74582fe32}\label{arbre_8h_ade04e8faa0f67cc84b79ebd74582fe32}} 
+\index{arbre.h@{arbre.h}!trad\_fichier\_ascii@{trad\_fichier\_ascii}}
+\index{trad\_fichier\_ascii@{trad\_fichier\_ascii}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{trad\_fichier\_ascii()}{trad\_fichier\_ascii()}}
+{\footnotesize\ttfamily void trad\+\_\+fichier\+\_\+ascii (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Function to translate ascci files. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_ade04e8faa0f67cc84b79ebd74582fe32}{trad\_fichier\_ascii}}(FILE* f);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_8h_aa89d821022996d8fbb77cf6ba96d458f}\label{arbre_8h_aa89d821022996d8fbb77cf6ba96d458f}} 
+\index{arbre.h@{arbre.h}!trie\_liste@{trie\_liste}}
+\index{trie\_liste@{trie\_liste}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{trie\_liste()}{trie\_liste()}}
+{\footnotesize\ttfamily void trie\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$}]{liste }\end{DoxyParamCaption})}
+
+
+
+Function to sort a list. ~\newline
+ Example. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{arbre_8h_aa89d821022996d8fbb77cf6ba96d458f}{trie\_liste}}(\mbox{\hyperlink{struct_element}{Element}}** liste);}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+
+
+
+\end{DoxyReturn}

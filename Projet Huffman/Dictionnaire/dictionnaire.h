@@ -1,10 +1,11 @@
 /*****************************************************************//**
- * \file   dictionnaire.H
- * \brief  Header of the library allowing the management of dictionnaire.
- *
- * \author  Mélina, Arnaud, Pavidran, Olivier, Tommy
- * \date   November 2020
- *********************************************************************/
+  * \file   dictionnaire.h
+  * \brief Header of the library allowing the management of dictionnaire.
+  *
+  * \author Mélina, Arnaud, Pavidran, Olivier, Tommy
+  * \date   November 2020
+  *********************************************************************/
+
 #ifndef DICTIONNAIRE_H_INCLUDED
 #define DICTIONNAIRE_H_INCLUDED
 

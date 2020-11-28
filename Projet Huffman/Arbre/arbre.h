@@ -1,46 +1,45 @@
-/*****************************************************************//**
- * \file   arbre.H
- * \brief  Header of the library allowing the management of arbre.
- *
- * \author  Mélina, Arnaud, Pavidran, Olivier, Tommy
- * \date   November 2020
- *********************************************************************/
+ /*****************************************************************//**
+  * \file   arbre.h
+  * \brief  Header of the library allowing the management of arbre.
+  *
+  * \author Mélina, Arnaud, Pavidran, Olivier, Tommy
+  * \date   November 2020
+  *********************************************************************/
 #ifndef ARBRE_H_INCLUDED
 #define ARBRE_H_INCLUDED
 
- /**
-  *  \typedef struct Element
-  *   \brief structure of the liste of element.
-  */
-typedef struct Element Element;
-struct Element
+ 
+
+/**
+ *  \typedef struct Element
+ *   \brief structure of the liste of element.
+ */
+typedef struct Element
 {
     char lettre;
     int nombre;
     Element* suivant;
-};
+}Element;
+
 /**
  *  \typedef struct Noeud
  *   \brief structure of the liste of noeud.
  */
-typedef struct Noeud Noeud;
-struct Noeud
-{
+typedef struct Noeud{
     int poids;
     char lettre;
     Noeud* droite;
     Noeud* gauche;
-};
+} Noeud;
+
 /**
  *  \typedef struct Noeud
  *   \brief structure list of noeud.
  */
-typedef struct L_Noeud L_Noeud;
-struct L_Noeud
-{
+typedef struct L_Noeud{
     Noeud* n;
     L_Noeud* suivant;
-};
+} L_Noeud;
 
 
 
