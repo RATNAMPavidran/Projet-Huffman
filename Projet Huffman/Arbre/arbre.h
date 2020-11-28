@@ -5,9 +5,6 @@
  * \author  Mélina, Arnaud, Pavidran, Olivier, Tommy
  * \date   November 2020
  *********************************************************************/
-
-
-
 #ifndef ARBRE_H_INCLUDED
 #define ARBRE_H_INCLUDED
 
@@ -22,7 +19,6 @@ struct Element
     int nombre;
     Element* suivant;
 };
-
 /**
  *  \typedef struct Noeud
  *   \brief structure of the liste of noeud.
@@ -35,7 +31,6 @@ struct Noeud
     Noeud* droite;
     Noeud* gauche;
 };
-
 /**
  *  \typedef struct Noeud
  *   \brief structure list of noeud.

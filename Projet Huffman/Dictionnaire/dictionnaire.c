@@ -36,7 +36,6 @@ void creer_code(Noeud* Arbre, char* code, FILE* dico) // Création du dictionnai
         }
     }
 }
-
 /**
  * \brief Function to translate a chractere with the dictionary.
  * \n Example

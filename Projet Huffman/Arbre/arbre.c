@@ -14,7 +14,6 @@
  *
  */
 extern void trad_fichier_ascii(FILE* f);
-
 void trad_fichier_ascii(FILE* f)
 {
     FILE* trad = fopen("Traduction.txt", "w+");
@@ -36,8 +35,6 @@ void trad_fichier_ascii(FILE* f)
     }
 
 }
-
-
 /**
  * \brief Function to convert number to binary.
  * \n Example
@@ -49,7 +46,6 @@ void trad_fichier_ascii(FILE* f)
  *
  */
 externchar* binaire(char a);
-
 char* binaire(char a)            //Convertie les lettres en binaire
 {
     int i = 0;
@@ -74,7 +70,6 @@ char* binaire(char a)            //Convertie les lettres en binaire
 
     return octet;
 }
-
 /**
  * \brief Function to convert number to binary.
  * \n Example
@@ -86,7 +81,6 @@ char* binaire(char a)            //Convertie les lettres en binaire
  *
  */
 externchar* binaire(char a);
-
 int nombre_caractere_fich_txt(FILE* f)
 {
     int nombre = -1; // on enleve le NULL à la fin du texte 
@@ -100,7 +94,6 @@ int nombre_caractere_fich_txt(FILE* f)
 
     return nombre;
 }
-
 /**
  * \brief Function to count occurence of a charactere.
  * \n Example
@@ -112,7 +105,6 @@ int nombre_caractere_fich_txt(FILE* f)
  *
  */
 externElement* compter_occurrence(FILE* f);
-
 Element* compter_occurrence(FILE* f)
 {
     Element* lsc;
@@ -166,7 +158,6 @@ Element* compter_occurrence(FILE* f)
     //afficherListe(lsc);
     return lsc;
 }
-
 /**
  * \brief Function to print a list of element .
  * \n Example
@@ -178,7 +169,6 @@ Element* compter_occurrence(FILE* f)
  *
  */
 extern afficherListe(Element* liste);
-
 void afficherListe(Element* liste)
 {
     Element* temp = liste;
@@ -191,7 +181,6 @@ void afficherListe(Element* liste)
     }
     printf("NULL\n");
 }
-
 /**
  * \brief Function  to creat  a list of noeud .
  * \n Example
@@ -203,7 +192,6 @@ void afficherListe(Element* liste)
  *
  */
 extern creer_liste(L_Noeud** l_nd, Element* l);
-
 void creer_liste(L_Noeud** l_nd, Element* l) // CREER une liste de noeuds
 {
     Element* lect = l; //lect pour lecture
@@ -243,8 +231,6 @@ void creer_liste(L_Noeud** l_nd, Element* l) // CREER une liste de noeuds
 
     temp->suivant = NULL;
 }
-
-
 /**
  * \brief Function  to print  a list of noeud .
  * \n Example
@@ -256,7 +242,6 @@ void creer_liste(L_Noeud** l_nd, Element* l) // CREER une liste de noeuds
  *
  */
 extern void afficherListe_Noeud(L_Noeud* liste);
-
 void afficherListe_Noeud(L_Noeud* liste)
 {
     L_Noeud* temp = liste;
@@ -270,7 +255,6 @@ void afficherListe_Noeud(L_Noeud* liste)
     }
     printf("NULL\n");
 }
-
 /**
  * \brief Function  to add  a node to a  list of node .
  * \n Example
@@ -282,7 +266,6 @@ void afficherListe_Noeud(L_Noeud* liste)
  *
  */
 extern void Add_Liste_Noeud(L_Noeud** l, Noeud* n);
-
 void Add_Liste_Noeud(L_Noeud** l, Noeud* n)  // Ajouter n dans la liste de noeud (avec n noeud contenant le poid de de noeud + ces noeuds en enfant)
 {
     L_Noeud* temp = *l;
@@ -328,7 +311,6 @@ void Add_Liste_Noeud(L_Noeud** l, Noeud* n)  // Ajouter n dans la liste de noeud
         }
     }
 }
-
 /**
  * \brief Function  to sort a list.
  * \n Example
@@ -372,7 +354,6 @@ void trie_liste(Element** liste) {
 
     } while (boucle != 0);
 }
-
 /**
  * \brief Function  to creat Huffman tree.
  * \n Example
@@ -417,7 +398,6 @@ void Arbre_Huff(Element* l)
 
     fclose(dico);
 }
-
 /**
  * \brief Function  to print tree.
  * \n Example
