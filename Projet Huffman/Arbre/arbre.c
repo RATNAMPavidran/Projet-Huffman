@@ -31,3 +31,10 @@ void Afficher_tab(int taille, Noeud**tab){
 Noeud* Arb_Huff_queue(Noeud **tab,int taille){
     return (q2->liste_noeud->n);
 }
+
+void free_tree(Noeud* tree){
+}
+
+
+
+
