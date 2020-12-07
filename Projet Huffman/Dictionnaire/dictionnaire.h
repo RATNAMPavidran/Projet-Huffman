@@ -3,13 +3,8 @@
 
 #include "arbre.h"
 
-void creer_code_v2(Noeud *Arbre, char* code,Noeud**tab){
-
-}
-
-int chercher_lettre_avl(Noeud *avl,char* code, char* lettre){
-  return 0;
-}
+void creer_code_v2(Noeud *Arbre, char* code,Noeud**tab);
+int chercher_lettre_avl(Noeud *avl,char* code, char* lettre);
 
 
 #endif // DICTIONNAIRE_H_INCLUDED
