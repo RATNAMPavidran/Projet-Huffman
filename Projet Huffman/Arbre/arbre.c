@@ -2,6 +2,40 @@
 #include <stdlib.h>
 #include "arbre.h"
 
+typedef struct Element Element;
+struct Element
+{
+    char lettre;
+    int nombre;
+    Element *suivant;
+};
+
+
+typedef struct Noeud Noeud;
+struct Noeud
+{
+    int poids;
+    char lettre;
+
+    char code[30];
+    Noeud *droite;
+    Noeud *gauche;
+};
+
+
+typedef struct L_Noeud L_Noeud;
+struct L_Noeud
+{
+    Noeud* n;
+    L_Noeud *suivant;
+};
+
+typedef struct Queue Queue;
+struct Queue
+{
+    L_Noeud* liste_noeud;
+};
+
 
 Noeud **creer_tab_occur(FILE* f,int *taille){
              return(tab);
