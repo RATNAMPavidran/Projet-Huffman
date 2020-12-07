@@ -44,4 +44,12 @@ void Afficher_tab(int taille, Noeud**tab);
 Noeud* Arb_Huff_queue(Noeud **tab,int taille);
 void free_tree(Noeud** tree);
 
+void add_noeud_avl (Noeud**avl,Noeud*noeud);
+int depth(Noeud* tree);
+int bf(Noeud* tree);
+void right_rotation(Noeud** tree);
+void left_rotation(Noeud** tree);
+void balance(Noeud** tree);
+Noeud* creer_avl(Noeud**tab, int taille);
+
 #endif // ARBRE_H_INCLUDED
