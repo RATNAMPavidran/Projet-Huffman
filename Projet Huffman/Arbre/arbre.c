@@ -35,6 +35,31 @@ Noeud* Arb_Huff_queue(Noeud **tab,int taille){
 void free_tree(Noeud* tree){
 }
 
+void add_noeud_avl (Noeud**avl,Noeud*noeud){
+}
+
+int depth(Noeud* tree){
+ return 1 + depth_left;
+ return 1 + depth_right;
+}
+
+int bf(Noeud* tree){
+  return 0;
+  return depth(tree->droite) - depth(tree->gauche);
+}
+
+void right_rotation(Noeud** tree){
+}
+
+void left_rotation(Noeud** tree){
+}
+
+void balance(Noeud** tree){
+}
+
+Noeud* creer_avl(Noeud**tab, int taille){
+   return(avl);
+}
 
 
 
