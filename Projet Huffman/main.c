@@ -1,20 +1,87 @@
-// Projet Huffman.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include <stdio.h>
+#include <stdlib.h>
+#include "Partie 1.h"
+#include <string.h>
 
-#include <iostream>
+void part1()
+{
+    FILE* fichier = fopen("Alice.txt", "r");
+
+    trad_fichier_ascii(fichier);
+    FILE* fichier2 = fopen("Traduction.txt", "r");
+    printf("%d est le nombre binaire\n",nombre_caractere_fich_txt(fichier2));
+    fclose(fichier);
+    fclose(fichier2);
+}
+
+void part2()
+{
+    FILE* fichier = fopen("Alice.txt", "r");
+    Element* lsc=malloc(sizeof(Element));
+
+
+    lsc=compter_occurrence(fichier);
+
+    if (lsc!=NULL)
+    {
+        trie_liste(&lsc);
+        Arbre_Huff(lsc);
+        rewind(fichier);
+        FILE *dico = fopen("dico.txt","r");
+        encodage(dico,fichier);
+        fclose(dico);
+    }
+    else
+    {
+        printf("Votre fichier est vide\n");
+    }
+
+}
+
+void part3()
+{
+    FILE* fichier = fopen("Alice.txt", "r");
+    Noeud**tab=malloc(sizeof(Noeud*));
+    tab=NULL;
+    char code[30]="\0"; //CODE BINAIRE
+    int taille=0;
+
+    tab=creer_tab_occur(fichier,&taille);// Avoir la taille du tab dans le main
+
+
+
+
+    if (taille!=0)
+    {
+        quick_sort(&tab,0,taille-1);
+        Noeud *Arbre= Arb_Huff_queue(tab,taille);
+        creer_code_v2(Arbre,code,tab);
+        rewind(fichier);
+        Noeud*avl=creer_avl(tab,taille);
+        encodage_avl(fichier,avl);
+
+        decodage_avl(avl);
+        free(Arbre);
+        free(avl);
+    }
+    else
+    {
+        printf("Votre fichier est vide !\n");
+    }
+
+ fclose(fichier);
+
+}
+
+
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //part1();
+    //part2();
+   part3();
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
