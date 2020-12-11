@@ -23,7 +23,7 @@ void trad_fichier_ascii(FILE* f)
     {
         do
         {
-            caractereActuel = fgetc(f); // on récupère un caractère du fichier
+            caractereActuel = fgetc(f); // on rÃ©cupÃ¨re un caractÃ¨re du fichier
 
             traduction = binaire(caractereActuel);  // on traduit en binaire
             if (caractereActuel != -1)              //c'est EOF mais correspond sur certaines machines a -1
@@ -41,7 +41,7 @@ void trad_fichier_ascii(FILE* f)
  * \code{.c}
  * char* binaire(char a);
  * \endcode
- * \return if the character is not none, we generate the  binary convesion of the charactere.
+ * \return if the character is not none, we generate the  binary conversion of the charactere.
  *  \return \c NULL, if the charactere is none.
  *
  */
@@ -83,7 +83,7 @@ char* binaire(char a)            //Convertie les lettres en binaire
 extern char* binaire(char a);
 int nombre_caractere_fich_txt(FILE* f)
 {
-    int nombre = -1; // on enleve le NULL à la fin du texte 
+    int nombre = -1; // on enleve le NULL Ã  la fin du texte 
     char caractereActuel;
     do
     {
@@ -121,14 +121,14 @@ Element* compter_occurrence(FILE* f)
         do
         {
 
-            lettre = fgetc(f);           // on stock le caractère suiv
+            lettre = fgetc(f);           // on stock le caractÃ¨re suiv
             Element* temp = lsc;           // on recommence pour la boucle
             int trouve = 0;
-            if (lettre != -1)             // Différent de la fin, c'est EOF mais correspond sur certaines machines a -1
+            if (lettre != -1)             // DiffÃ©rent de la fin, c'est EOF mais correspond sur certaines machines a -1
             {
                 while ((temp != NULL) && trouve != 1)
                 {
-                    if (lettre == temp->lettre)  // CAS ou on a déja rencontré le caractère
+                    if (lettre == temp->lettre)  // CAS ou on a dÃ©ja rencontrÃ© le caractÃ¨re
                     {
                         temp->nombre++;
                         trouve = 1;
@@ -141,7 +141,7 @@ Element* compter_occurrence(FILE* f)
                     temp = lsc;
                     Element* nouveau = malloc(sizeof(Element));
 
-                    while (temp->suivant != NULL)    // arrive jusqu'à la fin pour ajouter le nv caractère à la liste
+                    while (temp->suivant != NULL)    // arrive jusqu'Ã  la fin pour ajouter le nv caractÃ¨re Ã  la liste
                     {
                         temp = temp->suivant;
                     }
@@ -211,8 +211,8 @@ void creer_liste(L_Noeud** l_nd, Element* l) // CREER une liste de noeuds
 
     while (lect != NULL)       //tant que liste != NULL
     {
-        L_Noeud* nouv_el = malloc(sizeof(L_Noeud));        //création de liste de noeud
-        Noeud* n = malloc(sizeof(Noeud));                //création du noeud
+        L_Noeud* nouv_el = malloc(sizeof(L_Noeud));        //crÃ©ation de liste de noeud
+        Noeud* n = malloc(sizeof(Noeud));                //crÃ©ation du noeud
 
         n->poids = lect->nombre;
         n->lettre = lect->lettre;
@@ -346,7 +346,7 @@ void trie_liste(Element** liste) {
 
                 temp->suivant->nombre = permut_nbr;
                 temp->suivant->lettre = permut_char;
-                boucle = 1;                             //sera = à 1 jusqu'à qu'il n'y a plus de valeur à changer
+                boucle = 1;                             //sera = Ã  1 jusqu'Ã  qu'il n'y a plus de valeur Ã  changer
 
             }
             temp = temp->suivant;
@@ -368,7 +368,7 @@ extern void Arbre_Huff(Element* l);
 void Arbre_Huff(Element* l)
 {
     L_Noeud* l_nd = malloc(sizeof(struct L_Noeud));
-    creer_liste(&l_nd, l);    //création liste de noeud
+    creer_liste(&l_nd, l);    //crÃ©ation liste de noeud
 
     L_Noeud* temp = l_nd;
     afficherListe_Noeud(l_nd);
@@ -376,13 +376,13 @@ void Arbre_Huff(Element* l)
 
     while (temp->suivant != NULL)
     {
-        Noeud* n = malloc(sizeof(struct Noeud));              // création noeud pour le poid
+        Noeud* n = malloc(sizeof(struct Noeud));              // crÃ©ation noeud pour le poid
         n->poids = temp->n->poids + temp->suivant->n->poids;  // addition de deux poids 
         n->lettre = '\0';
         n->gauche = temp->n;
         n->droite = temp->suivant->n;
 
-        Add_Liste_Noeud(&temp, n);       // on ajoute n à la liste de noeud
+        Add_Liste_Noeud(&temp, n);       // on ajoute n Ã  la liste de noeud
         afficherListe_Noeud(temp);
         temp = temp->suivant->suivant;
         if (temp->suivant == NULL)
