@@ -8,7 +8,6 @@
 ifndef ENCODAGE_H_INCLUDED
 #define ENCODAGE_H_INCLUDED
 
-#include "encodage.h"
 #include "dictionnaire.h"
 #include "arbre.h"
 

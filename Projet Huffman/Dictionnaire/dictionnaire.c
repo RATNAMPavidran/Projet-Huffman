@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dictionnaire.h"
+#include "arbre.h"
 
 /**
  * \brief Function to creat  dictionary.

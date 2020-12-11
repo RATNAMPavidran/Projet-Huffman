@@ -87,7 +87,7 @@ Noeud** creer_tab_occur(FILE* f,int *taille)
  * \brief Function to creat an array of noeud.
  * \n Example
  * \code{.c}
- *L_Noeud * Tab_to_L_Noeud(Noeud ** tab , int nbre_chara_diff );
+ * L_Noeud * Tab_to_L_Noeud(Noeud ** tab , int nbre_chara_diff );
  * \endcode
  * \return noeud.
  *  \return

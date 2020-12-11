@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Partie 1.h"
+#include "arbre.h"
+#include "encodage.h"
+#include "dictionnaire.h"
 #include <string.h>
 
-void part1()
+void part1()  
 {
     FILE* fichier = fopen("Alice.txt", "r");
-
     trad_fichier_ascii(fichier);
     FILE* fichier2 = fopen("Traduction.txt", "r");
     printf("%d est le nombre binaire\n",nombre_caractere_fich_txt(fichier2));
