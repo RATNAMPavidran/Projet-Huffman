@@ -5,41 +5,16 @@
 #include "dictionnaire.h"
 #include <string.h>
 
-void part1()  
+int main()
 {
-    FILE* fichier = fopen("Alice.txt", "r");
-    trad_fichier_ascii(fichier);
-    FILE* fichier2 = fopen("Traduction.txt", "r");
-    printf("%d est le nombre binaire\n",nombre_caractere_fich_txt(fichier2));
-    fclose(fichier);
-    fclose(fichier2);
+    //Partie0();
+    //Arbre_Huffman_naif();
+   Arbre_Huffman();
+
+    return 0;
 }
 
-void part2()
-{
-    FILE* fichier = fopen("Alice.txt", "r");
-    Element* lsc=malloc(sizeof(Element));
-
-
-    lsc=compter_occurrence(fichier);
-
-    if (lsc!=NULL)
-    {
-        trie_liste(&lsc);
-        Arbre_Huff(lsc);
-        rewind(fichier);
-        FILE *dico = fopen("dico.txt","r");
-        encodage(dico,fichier);
-        fclose(dico);
-    }
-    else
-    {
-        printf("Votre fichier est vide\n");
-    }
-
-}
-
-void part3()
+void Arbre_Huffman()
 {
     FILE* fichier = fopen("Alice.txt", "r");
     Noeud**tab=malloc(sizeof(Noeud*));
@@ -76,13 +51,37 @@ void part3()
 
 
 
-
-
-int main()
+void Partie0()
 {
-    //part1();
-    //part2();
-   part3();
+    FILE* fichier = fopen("Alice.txt", "r");
 
-    return 0;
+    trad_fichier_ascii(fichier);
+    FILE* fichier2 = fopen("Traduction.txt", "r");
+    printf("%d est le nombre binaire\n",nombre_caractere_fich_txt(fichier2));
+    fclose(fichier);
+    fclose(fichier2);
+}
+
+void Arbre_Huffman_naif()
+{
+    FILE* fichier = fopen("Alice.txt", "r");
+    Element* lsc=malloc(sizeof(Element));
+
+
+    lsc=compter_occurrences(fichier);
+
+    if (lsc!=NULL)
+    {
+        trie_liste(&lsc);
+        Arbre_Huff(lsc);
+        rewind(fichier);
+        FILE *dico = fopen("dico.txt","r");
+        encodage(dico,fichier);
+        fclose(dico);
+    }
+    else
+    {
+        printf("Votre fichier est vide\n");
+    }
+
 }
