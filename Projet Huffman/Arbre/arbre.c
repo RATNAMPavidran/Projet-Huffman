@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "arbre.h"
-#include "encodage.h"
-#include "dictionnaire.h"
-#include <string.h>
 
 
 
