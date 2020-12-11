@@ -5,6 +5,16 @@
 #include "dictionnaire.h"
 #include "arbre.h"
 
+/**
+ * \brief Function to decode.
+ * \n Example
+ * \code{.c}
+ * void decodage_avl(Noeud*avl);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void decodage_avl(Noeud*avl)
 {
     FILE* trad = fopen("Decodage.txt","w+");
@@ -47,6 +57,17 @@ void decodage_avl(Noeud*avl)
     fclose(f);
     fclose(trad);
 }
+
+/**
+ * \brief Function to encode.
+ * \n Example
+ * \code{.c}
+ * void encodage_avl(FILE* f, Noeud*avl);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void encodage_avl(FILE* f, Noeud*avl)
 {
     FILE* trad = fopen("Traduction_dico.txt","w+");

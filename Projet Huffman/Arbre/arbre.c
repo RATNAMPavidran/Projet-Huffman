@@ -3,7 +3,16 @@
 #include "arbre.h"
 
 
-
+/**
+ * \brief Function to creat an array of occurence.
+ * \n Example
+ * \code{.c}
+ * Noeud** creer_tab_occur(FILE* f,int *taille);
+ * \endcode
+ * \return noeud.
+ *  \return
+ *
+ */
 Noeud** creer_tab_occur(FILE* f,int *taille)
 {
 
@@ -74,7 +83,16 @@ Noeud** creer_tab_occur(FILE* f,int *taille)
 
 }
 
-
+/**
+ * \brief Function to creat an array of noeud.
+ * \n Example
+ * \code{.c}
+ *L_Noeud * Tab_to_L_Noeud(Noeud ** tab , int nbre_chara_diff );
+ * \endcode
+ * \return noeud.
+ *  \return
+ *
+ */
 L_Noeud * Tab_to_L_Noeud(Noeud ** tab , int nbre_chara_diff )
 {
     L_Noeud* list =NULL;
@@ -103,7 +121,16 @@ L_Noeud * Tab_to_L_Noeud(Noeud ** tab , int nbre_chara_diff )
     return (list);
 }
 
-
+/**
+ * \brief Function to merge noeud.
+ * \n Example
+ * \code{.c}
+ * Noeud* fusionner_deux_noeuds(Noeud*n1,Noeud*n2);
+ * \endcode
+ * \return noeud.
+ *  \return
+ *
+ */
 Noeud* fusionner_deux_noeuds(Noeud*n1,Noeud*n2)
 {
     Noeud* nouv_noeud=malloc(sizeof(Noeud));
@@ -116,7 +143,16 @@ Noeud* fusionner_deux_noeuds(Noeud*n1,Noeud*n2)
     return (nouv_noeud);
 }
 
-
+/**
+ * \brief Function to creat noeud.
+ * \n Example
+ * \code{.c}
+ * Noeud ** creer_2_premiers_noeud (Noeud** tab,int* taille,FILE* f);
+ * \endcode
+ * \return noeud.
+ *  \return
+ *
+ */
 Noeud ** creer_2_premiers_noeud (Noeud** tab,int* taille,FILE* f) 
 {
 
@@ -163,7 +199,16 @@ tab= realloc( tab, (*taille) * sizeof(Noeud*) );
 
     return (tab);
 }
-
+/**
+ * \brief Function to sort.
+ * \n Example
+ * \code{.c}
+ * void quick_sort(Noeud*** tab, int debut, int fin);
+ * \endcode
+ * \return 
+ *  \return
+ *
+ */
 void quick_sort(Noeud*** tab, int debut, int fin)
 {
    int i;
@@ -204,8 +249,16 @@ void quick_sort(Noeud*** tab, int debut, int fin)
     }
 }
 
-
-
+/**
+ * \brief Function to print tab.
+ * \n Example
+ * \code{.c}
+ * void Afficher_tab(int taille, Noeud**tab);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void Afficher_tab(int taille, Noeud**tab)
 {
     int i=0;
@@ -221,8 +274,16 @@ void Afficher_tab(int taille, Noeud**tab)
 }
 
 
-
-
+/**
+ * \brief Function to creat huffman queue.
+ * \n Example
+ * \code{.c}
+ * Noeud* Arb_Huff_queue(Noeud **tab,int taille);
+ * \endcode
+ * \return Noeud.
+ *  \return
+ *
+ */
 Noeud* Arb_Huff_queue(Noeud **tab,int taille)
 {
     Queue* q1 = malloc(sizeof(Queue));
@@ -291,7 +352,16 @@ Noeud* Arb_Huff_queue(Noeud **tab,int taille)
 
 }
 
-
+/**
+ * \brief Function to free the tree.
+ * \n Example
+ * \code{.c}
+ * void free_tree(Noeud** tree);
+ * \endcode
+ * \return 
+ *  \return
+ *
+ */
 void free_tree(Noeud** tree){
     if(tree != NULL){
         free_tree((*tree)->gauche);
@@ -301,6 +371,16 @@ void free_tree(Noeud** tree){
 }
 
 
+/**
+ * \brief Function to add a node to the AVL.
+ * \n Example
+ * \code{.c}
+ * void add_noeud_avl(Noeud **avl, Noeud *noeud);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void add_noeud_avl(Noeud **avl, Noeud *noeud)
 {
     if ((*avl) ==NULL)
@@ -324,7 +404,16 @@ void add_noeud_avl(Noeud **avl, Noeud *noeud)
     }
 
 }
-
+/**
+ * \brief Function to find the depth of the tree.
+ * \n Example
+ * \code{.c}
+ * int depth(Noeud* tree);
+ * \endcode
+ * \return depth.
+ *  \return
+ *
+ */
 int depth(Noeud* tree)
 {
     if(tree == NULL){
@@ -342,7 +431,16 @@ int depth(Noeud* tree)
     }
 }
 
-
+/**
+ * \brief Function to calculate the balance factor.
+ * \n Example
+ * \code{.c}
+ * int bf(Noeud* tree);
+ * \endcode
+ * \return balance factor 0 or 1 or 2.
+ *  \return
+ *
+ */
 int bf(Noeud* tree)
 {
     if(tree == NULL) {
@@ -353,7 +451,16 @@ int bf(Noeud* tree)
     }
 }
 
-
+/**
+ * \brief Function for the right rotation.
+ * \n Example
+ * \code{.c}
+ * void right_rotation(Noeud** tree);
+ * \endcode
+ * \return 
+ *  \return
+ *
+ */
 void right_rotation(Noeud** tree){
     if (*tree != NULL){
         Noeud* temp = (*tree)->gauche;
@@ -362,7 +469,16 @@ void right_rotation(Noeud** tree){
         *tree = temp;
     }
 }
-
+/**
+ * \brief Function for the left rotation.
+ * \n Example
+ * \code{.c}
+ * void left_rotation(Noeud** tree);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void left_rotation(Noeud** tree){
     if (*tree != NULL){
         Noeud* temp = (*tree)->droite;
@@ -371,7 +487,16 @@ void left_rotation(Noeud** tree){
         *tree = temp;
     }
 }
-
+/**
+ * \brief Function to organize the AVL.
+ * \n Example
+ * \code{.c}
+ * void balance(Noeud** tree);
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 void balance(Noeud** tree){
     if (*tree != NULL){
         balance(&((*tree)->gauche));// Postfix
@@ -392,7 +517,16 @@ void balance(Noeud** tree){
         }
     }
 }
-
+/**
+ * \brief Function to creat the AVL.
+ * \n Example
+ * \code{.c}
+ * Noeud* creer_avl(Noeud**tab, int taille );
+ * \endcode
+ * \return
+ *  \return
+ *
+ */
 Noeud* creer_avl(Noeud**tab, int taille )
 {
     Noeud *avl=malloc(sizeof(Noeud));
