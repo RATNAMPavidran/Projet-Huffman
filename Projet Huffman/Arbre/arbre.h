@@ -1,8 +1,9 @@
+
 /*****************************************************************//**
  * \file   arbre.h
  * \brief  Header of the library allowing the management of arbre.
  *
- * \author Mélina, Arnaud, Pavidran, Olivier, Tommy
+ * \author MÃ©lina, Arnaud, Pavidran, Olivier, Tommy
  * \date   November 2020
  *********************************************************************/
 #ifndef ARBRE_H_INCLUDED
