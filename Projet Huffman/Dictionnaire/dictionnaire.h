@@ -1,8 +1,9 @@
+
 /*****************************************************************//**
   * \file   dictionnaire.h
   * \brief Header of the library allowing the management of dictionnaire.
   *
-  * \author Mélina, Arnaud, Pavidran, Olivier, Tommy
+  * \author MÃ©lina, Arnaud, Pavidran, Olivier, Tommy
   * \date   November 2020
   *********************************************************************/
 #ifndef DICTIONNAIRE_H_INCLUDED
